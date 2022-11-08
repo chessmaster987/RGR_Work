@@ -8,5 +8,6 @@ namespace RGR_Project
 {
     public class SeaDelivery : Delivery
     {
+
     }
 }

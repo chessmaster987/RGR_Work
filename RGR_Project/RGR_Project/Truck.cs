@@ -9,25 +9,66 @@ namespace RGR_Project
     public class Truck : Transport
     {
         Random random = new Random();
-        int DeliveryWeight;
-        int DeliveryDistance;
+        private int TruckDeliveryWeight;
+        private int TruckDeliveryDistance;
+        private int TruckFuel;
+        private double DeliveryTime;
         public void deliver() {
-            DeliveryWeight = random.Next(1, 1500);
-            Console.WriteLine("Вага вантажу = {0}", DeliveryWeight);
+            TruckDeliveryWeight = random.Next(1, 1500);
+            Console.WriteLine("Вага вантажу = {0}", TruckDeliveryWeight);
             int Dist_first;
-            DeliveryDistance = random.Next(1, 3000);
-            Dist_first = DeliveryDistance;
-            Console.WriteLine("Dist_first: {0}", Dist_first);
-            if (DeliveryWeight < 250)
-                DeliveryDistance += 0;
-            else if (DeliveryWeight >= 250 && DeliveryWeight <= 800)
-                DeliveryDistance += 5;
-            else if (DeliveryWeight > 800 && DeliveryWeight <= 1200)
-                DeliveryDistance += 10;
-            else
-                DeliveryDistance += 15;
-            Console.WriteLine("Дистанцiя доставки = {0}", DeliveryDistance);
+            TruckDeliveryDistance = random.Next(1, 3000);
+            Dist_first = TruckDeliveryDistance;
+            //Console.WriteLine("Dist_first: {0}", Dist_first);
+            if (TruckDeliveryWeight < 250)
+            {
+                TruckDeliveryDistance += 0;
+            }
+            else if (TruckDeliveryWeight >= 250 && TruckDeliveryWeight <= 800)
+            {
+                TruckDeliveryDistance += 5;
+            }
+            else if (TruckDeliveryWeight > 800 && TruckDeliveryWeight <= 1200)
+            {
+                TruckDeliveryDistance += 10;
+            }
+            else {
+                TruckDeliveryDistance += 15;
+            }
+            Console.WriteLine("Дистанцiя доставки = {0}", TruckDeliveryDistance);
         }
-
+        public void fillfuel()
+        {
+            if (TruckFuel <= 0)
+            {
+                TruckFuel += 250;
+                DeliveryTime += 0.5;
+            }
+        }
+        public void howfuel() {
+            TruckFuel = random.Next(0, 250);
+            Console.WriteLine("Кiлькiсть пального: {0}", TruckFuel);
+            if (TruckDeliveryWeight < 250) {
+                TruckFuel -= random.Next(10, 16);
+            }
+            else if (TruckDeliveryWeight >= 250 && TruckDeliveryWeight <= 800)
+            {
+                TruckFuel -= random.Next(20, 26);
+            }
+            else if (TruckDeliveryWeight > 800 && TruckDeliveryWeight <= 1200)
+            {
+                TruckFuel -= random.Next(30, 36);
+            }
+            else
+            {
+                TruckFuel -= random.Next(40, 45);
+            }
+            Console.WriteLine("Очiкуваний залишок пального: {0}", TruckFuel);
+            DeliveryTime = TruckDeliveryDistance / 75;//середня швидкість 75
+            Console.WriteLine("приблизний час прибуття вантажу: {0} годин", DeliveryTime);
+        }
+        public void display() {
+            Console.WriteLine("Я вантажiвка");
+        }
     }
 }
