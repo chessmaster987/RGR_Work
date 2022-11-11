@@ -9,16 +9,16 @@ namespace RGR_Project
     public class Truck : Transport
     {
         Random random = new Random();
-        private int TruckDeliveryWeight;
-        private int TruckDeliveryDistance;
-        private int TruckFuel;
-        private double DeliveryTime;
+        private int TruckDeliveryWeight { get; set; }
+        private int TruckDeliveryDistance { get; set; }
+        private int TruckFuel { get; set; }
+        private int DeliveryTime = 0;
         public void deliver() {
             TruckDeliveryWeight = random.Next(1, 1500);
             Console.WriteLine("Вага вантажу = {0}", TruckDeliveryWeight);
-            int Dist_first;
+            //int Dist_first;
             TruckDeliveryDistance = random.Next(1, 3000);
-            Dist_first = TruckDeliveryDistance;
+            //Dist_first = TruckDeliveryDistance;
             //Console.WriteLine("Dist_first: {0}", Dist_first);
             if (TruckDeliveryWeight < 250)
             {
@@ -37,18 +37,11 @@ namespace RGR_Project
             }
             Console.WriteLine("Дистанцiя доставки = {0}", TruckDeliveryDistance);
         }
-        public void fillfuel()
-        {
-            if (TruckFuel <= 0)
-            {
-                TruckFuel += 250;
-                DeliveryTime += 0.5;
-            }
-        }
-        public void howfuel() {
-            TruckFuel = random.Next(0, 250);
+        public void fillfuel() {
+            TruckFuel = random.Next(50, 250);
             Console.WriteLine("Кiлькiсть пального: {0}", TruckFuel);
-            if (TruckDeliveryWeight < 250) {
+            if (TruckDeliveryWeight < 250)
+            {
                 TruckFuel -= random.Next(10, 16);
             }
             else if (TruckDeliveryWeight >= 250 && TruckDeliveryWeight <= 800)
@@ -63,12 +56,17 @@ namespace RGR_Project
             {
                 TruckFuel -= random.Next(40, 45);
             }
+            if (TruckFuel <= 0)
+            {
+                TruckFuel += 250;
+                DeliveryTime += 1;
+            }
             Console.WriteLine("Очiкуваний залишок пального: {0}", TruckFuel);
             DeliveryTime = TruckDeliveryDistance / 75;//середня швидкість 75
-            Console.WriteLine("приблизний час прибуття вантажу: {0} годин", DeliveryTime);
+            Console.WriteLine("Приблизний час прибуття вантажу: {0} годин", DeliveryTime);
         }
         public void display() {
-            Console.WriteLine("Я вантажiвка");
+            Console.WriteLine("Вантажiвка");
         }
     }
 }

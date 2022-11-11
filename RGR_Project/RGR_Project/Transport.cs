@@ -9,8 +9,7 @@ namespace RGR_Project
     public interface Transport
     {
         public void deliver();
-        public void howfuel();
-        public void display();
         public void fillfuel();
+        public void display();
     }
 }

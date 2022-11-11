@@ -1,0 +1,15 @@
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\bin\Debug\net6.0\RGR_Project.exe
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\bin\Debug\net6.0\RGR_Project.deps.json
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\bin\Debug\net6.0\RGR_Project.runtimeconfig.json
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\bin\Debug\net6.0\RGR_Project.dll
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\bin\Debug\net6.0\RGR_Project.pdb
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.csproj.AssemblyReference.cache
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.AssemblyInfoInputs.cache
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.AssemblyInfo.cs
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.csproj.CoreCompileInputs.cache
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.dll
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\refint\RGR_Project.dll
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.pdb
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\RGR_Project.genruntimeconfig.cache
+C:\Users\Olegi\Desktop\RGR_Project_Lavrov\RGR_Project\RGR_Project\obj\Debug\net6.0\ref\RGR_Project.dll

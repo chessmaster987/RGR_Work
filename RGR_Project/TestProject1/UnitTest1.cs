@@ -9,8 +9,8 @@ namespace TestProject1
         {
             Truck t = new Truck();
             t.deliver();
-            t.howfuel();
-            //Assert.AreEqual();
+            t.fillfuel();
+            Assert.AreEqual(t.GetType().Name, "Truck");
         }
     }
 }
