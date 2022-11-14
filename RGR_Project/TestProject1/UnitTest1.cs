@@ -12,5 +12,12 @@ namespace TestProject1
             t.fillfuel();
             Assert.AreEqual(t.GetType().Name, "Truck");
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        { 
+            
+        }
     }
 }
+    
