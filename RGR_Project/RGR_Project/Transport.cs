@@ -11,5 +11,6 @@ namespace RGR_Project
         public void deliver();
         public void fillfuel();
         public void display();
+        public void delivertime();
     }
 }

@@ -15,6 +15,7 @@ namespace RGR_Project
             transport.deliver();
             transport.fillfuel();
             transport.display();
+            transport.delivertime();
         }
     }
 }

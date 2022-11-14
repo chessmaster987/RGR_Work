@@ -5,7 +5,7 @@ namespace TestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod1()//first, when was only a Truck.cs & interface Transport
         {
             Truck t = new Truck();
             t.deliver();
@@ -14,7 +14,7 @@ namespace TestProject1
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void TestMethod2()//creating by Factory Method pattern 
         { 
            Delivery truckcreate = new RoadDelivery();
            Delivery planecreate = new WindDelivery();

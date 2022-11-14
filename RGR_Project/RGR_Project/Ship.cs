@@ -60,7 +60,9 @@ namespace RGR_Project
                 ShipFuel -= random.Next(501, 750);
             }
             Console.WriteLine("Очiкуваний залишок пального: {0}", ShipFuel);
-            DeliveryTime = ShipDeliveryDistance / 80;//середня швидкість 80
+        }
+        public void delivertime() {
+            DeliveryTime = ShipDeliveryDistance / 60;//середня швидкість 60
             Console.WriteLine("Приблизний час прибуття вантажу: {0} годин", DeliveryTime);
         }
         public void display()

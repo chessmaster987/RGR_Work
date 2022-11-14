@@ -52,12 +52,14 @@ namespace RGR_Project
                 PlaneFuel -= random.Next(260, 400);
             }
             Console.WriteLine("Очiкуваний залишок пального: {0}", PlaneFuel);
+        }
+        public void delivertime() {
             DeliveryTime = PlaneDeliveryDistance / 120;//середня швидкість 120
             Console.WriteLine("Приблизний час прибуття вантажу: {0} годин", DeliveryTime);
         }
         public void display()
         {
-            Console.WriteLine("Я корабель");
+            Console.WriteLine("Я лiтак");
         }
     }
 }

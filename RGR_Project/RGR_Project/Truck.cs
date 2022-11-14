@@ -62,6 +62,8 @@ namespace RGR_Project
                 DeliveryTime += 1;
             }
             Console.WriteLine("Очiкуваний залишок пального: {0}", TruckFuel);
+        }
+        public void delivertime() {
             DeliveryTime = TruckDeliveryDistance / 75;//середня швидкість 75
             Console.WriteLine("Приблизний час прибуття вантажу: {0} годин", DeliveryTime);
         }
