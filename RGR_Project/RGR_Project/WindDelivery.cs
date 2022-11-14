@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace RGR_Project
 {
-    public class SeaDelivery : Delivery
+    public class WindDelivery : Delivery
     {
         override public Transport CreateTransport()
         {
-            return new Ship();
+            return new Plane();
         }
     }
 }

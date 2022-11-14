@@ -8,6 +8,9 @@ namespace RGR_Project
 {
     public class RoadDelivery : Delivery
     {
-
+        override public Transport CreateTransport() {
+            return new Truck();
+            return new Auto();
+        }
     }
 }

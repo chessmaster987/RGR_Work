@@ -8,6 +8,6 @@ namespace RGR_Project
 {
     public abstract class Delivery
     {
-
+        public abstract Transport CreateTransport();
     }
 }
