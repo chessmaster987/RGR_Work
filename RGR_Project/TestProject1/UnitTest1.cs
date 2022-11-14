@@ -16,7 +16,13 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod2()
         { 
-            
+           Delivery truckcreate = new RoadDelivery();
+           Delivery planecreate = new WindDelivery();
+           Delivery shipcreate = new SeaDelivery();
+           Transport truck = truckcreate.CreateTransport();
+           Transport plane = planecreate.CreateTransport();
+           Transport ship = shipcreate.CreateTransport();
+           Assert.AreEqual(plane.GetType().Name, "Plane");
         }
     }
 }
