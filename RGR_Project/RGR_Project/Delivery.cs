@@ -9,5 +9,12 @@ namespace RGR_Project
     public abstract class Delivery
     {
         public abstract Transport CreateTransport();
+        public void someOperation()
+        {
+            Transport transport = CreateTransport();
+            transport.deliver();
+            transport.fillfuel();
+            transport.display();
+        }
     }
 }

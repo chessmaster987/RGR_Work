@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace RGR_Project
 {
-    public class RoadDelivery : Delivery
+    internal class Auto
     {
-        override public Transport CreateTransport() {
-            return new Truck();
-        }
     }
 }
