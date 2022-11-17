@@ -24,5 +24,3 @@ truck.delivertime();
 //ship.fillfuel();
 //ship.deliver();
 //ship.delivertime();
-truck.SetEngineUpdateBehaviour(new EngineUpdate());
-truck.deliver();
