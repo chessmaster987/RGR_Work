@@ -12,5 +12,7 @@ namespace RGR_Project
         public void fillfuel();
         public void display();
         public void delivertime();
+        public void SetEngineUpdateBehaviour(IStrategyBehaviour UpdateEngine);
+        public void SetWheelsUpdateBehaviour(IStrategyBehaviour UpdateWheels);
     }
 }

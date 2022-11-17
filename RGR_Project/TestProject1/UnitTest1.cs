@@ -24,6 +24,12 @@ namespace TestProject1
            Transport ship = shipcreate.CreateTransport();
            Assert.AreEqual(plane.GetType().Name, "Plane");
         }
+
+        [TestMethod]
+        public void TestMethod3() //creating by Decorator Method pattern
+        {
+            
+        }
     }
 }
     

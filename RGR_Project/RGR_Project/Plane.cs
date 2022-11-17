@@ -9,18 +9,16 @@ namespace RGR_Project
     public class Plane : Transport
     {
         Random random = new Random();
-        private int PlaneDeliveryWeight { get; set; }
-        private int PlaneDeliveryDistance { get; set; }
-        private int PlaneFuel { get; set; }
+        IStrategyBehaviour strategyBehaviour;
+        private int PlaneDeliveryWeight;
+        private int PlaneDeliveryDistance;
+        private int PlaneFuel;
         private int DeliveryTime = 0;
         public void deliver()
         {
             PlaneDeliveryWeight = random.Next(1, 5000);
             Console.WriteLine("Вага вантажу = {0}", PlaneDeliveryWeight);
-            //int Dist_first;
             PlaneDeliveryDistance = random.Next(1, 5000);
-            //Dist_first = ShipDeliveryDistance;
-            //Console.WriteLine("Dist_first: {0}", Dist_first);
             if (PlaneDeliveryWeight <= 1500)
             {
                 PlaneDeliveryDistance += 100;
@@ -60,6 +58,30 @@ namespace RGR_Project
         public void display()
         {
             Console.WriteLine("Я лiтак");
+        }
+        public IStrategyBehaviour GetBehaviour
+        {
+            get
+            {
+                return strategyBehaviour;
+            }
+            set
+            {
+                strategyBehaviour = value;
+            }
+        }
+
+        public void SetEngineUpdateBehaviour(IStrategyBehaviour UpdateEngine)
+        {
+            strategyBehaviour = UpdateEngine;
+            PlaneDeliveryDistance -= 50;
+            DeliveryTime -= 75;
+        }
+        public void SetWheelsUpdateBehaviour(IStrategyBehaviour UpdateWheels)
+        {
+            strategyBehaviour = UpdateWheels;
+            PlaneDeliveryDistance = PlaneDeliveryDistance;
+            DeliveryTime = DeliveryTime;
         }
     }
 }

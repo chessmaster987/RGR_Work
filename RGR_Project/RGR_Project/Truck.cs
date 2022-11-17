@@ -9,17 +9,15 @@ namespace RGR_Project
     public class Truck : Transport
     {
         Random random = new Random();
-        private int TruckDeliveryWeight { get; set; }
-        private int TruckDeliveryDistance { get; set; }
-        private int TruckFuel { get; set; }
+        IStrategyBehaviour strategyBehaviour;
+        private int TruckDeliveryWeight;
+        private int TruckDeliveryDistance;
+        private int TruckFuel;
         private int DeliveryTime = 0;
         public void deliver() {
             TruckDeliveryWeight = random.Next(1, 1500);
             Console.WriteLine("Вага вантажу = {0}", TruckDeliveryWeight);
-            //int Dist_first;
             TruckDeliveryDistance = random.Next(1, 3000);
-            //Dist_first = TruckDeliveryDistance;
-            //Console.WriteLine("Dist_first: {0}", Dist_first);
             if (TruckDeliveryWeight < 250)
             {
                 TruckDeliveryDistance += 0;
@@ -69,6 +67,30 @@ namespace RGR_Project
         }
         public void display() {
             Console.WriteLine("Вантажiвка");
+        }
+        public IStrategyBehaviour GetBehaviour
+        {
+            get
+            {
+                return strategyBehaviour;
+            }
+            set
+            {
+                strategyBehaviour = value;
+            }
+        }
+
+        public void SetEngineUpdateBehaviour(IStrategyBehaviour UpdateEngine)
+        {
+            strategyBehaviour = UpdateEngine;
+            TruckDeliveryDistance -= 15;
+            DeliveryTime -= 30;
+        }
+        public void SetWheelsUpdateBehaviour(IStrategyBehaviour UpdateWheels) 
+        {
+            strategyBehaviour = UpdateWheels;
+            TruckDeliveryDistance -= 10;
+            DeliveryTime -= 15;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace RGR_Project
     public abstract class Delivery
     {
         public abstract Transport CreateTransport();
-        public void someOperation()
+        public virtual void Operation()
         {
             Transport transport = CreateTransport();
             transport.deliver();
@@ -17,5 +17,6 @@ namespace RGR_Project
             transport.display();
             transport.delivertime();
         }
+       
     }
 }
