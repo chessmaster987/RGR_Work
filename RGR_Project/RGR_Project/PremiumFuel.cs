@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace RGR_Project
 {
-    public class WindDelivery : Delivery
+    public class PremiumFuel : TransportDecorator
     {
-        override public Transport CreateTransport()
-        {
-            return new Plane();
-        }
+
     }
 }

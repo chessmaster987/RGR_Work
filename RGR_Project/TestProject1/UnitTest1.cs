@@ -9,20 +9,19 @@ namespace TestProject1
         {
             Truck t = new Truck();
             t.deliver();
-            t.fillfuel();
             Assert.AreEqual(t.GetType().Name, "Truck");
         }
 
         [TestMethod]
         public void TestMethod2()//creating by Factory Method pattern 
-        { 
-           Delivery truckcreate = new RoadDelivery();
-           Delivery planecreate = new WindDelivery();
-           Delivery shipcreate = new SeaDelivery();
-           Transport truck = truckcreate.CreateTransport();
-           Transport plane = planecreate.CreateTransport();
-           Transport ship = shipcreate.CreateTransport();
-           Assert.AreEqual(plane.GetType().Name, "Plane");
+        {
+            Creator truckcreate = new TransportCreator();
+            Creator planecreate = new TransportCreator();
+            Creator shipcreate = new TransportCreator();
+            Transport truck = truckcreate.CreateTransport("truck");
+            Transport plane = planecreate.CreateTransport("plane");
+            Transport ship = shipcreate.CreateTransport("ship");
+            Assert.AreEqual(plane.GetType().Name, "Plane");
         }
 
         [TestMethod]

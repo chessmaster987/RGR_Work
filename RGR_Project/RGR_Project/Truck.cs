@@ -16,7 +16,7 @@ namespace RGR_Project
         public Truck() {
             TruckDeliveryPrice = 40;
             TruckDeliveryDistance = 20;
-            TruckDeliverySpeed = 5;
+            TruckDeliverySpeed = 15;
         }
         public void deliver()
         {

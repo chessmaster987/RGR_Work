@@ -29,7 +29,7 @@ namespace RGR_Project
         }
         public void display()
         {
-            Console.WriteLine("Я лiтак");
+            Console.WriteLine("Лiтак");
         }
     }
 }
