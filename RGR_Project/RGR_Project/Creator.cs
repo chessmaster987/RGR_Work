@@ -6,15 +6,8 @@ using System.Threading.Tasks;
 
 namespace RGR_Project
 {
-    public abstract class Creator : Deliver
+    public abstract class Creator
     {
-        protected Transport transport;
         abstract public Transport CreateTransport(string type);
-        public void Operations() {
-            //Transport transport = CreateTransport("");
-            transport.display();
-            transport.deliver();
-            transport.delivertime();
-        }
     }
 }

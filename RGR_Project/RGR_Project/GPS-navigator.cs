@@ -8,10 +8,9 @@ namespace RGR_Project
 {
     public class GPS_navigator : TransportDecorator
     {
-        private Transport transport;
-        public void TransportDecorator(Transport transport)
+        public override void TransportType()
         {
-            this.truck = transport;
+            Console.WriteLine("I have a gps-tracker");
         }
     }
 }

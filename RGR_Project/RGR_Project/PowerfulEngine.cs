@@ -8,6 +8,9 @@ namespace RGR_Project
 {
     public class PowerfulEngine : TransportDecorator
     {
-
+        public override void TransportType()
+        {
+            Console.WriteLine("Engine changed to VERY power");
+        }
     }
 }

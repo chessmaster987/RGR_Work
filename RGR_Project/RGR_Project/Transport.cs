@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RGR_Project
 {
-     public interface Transport
+    public interface Transport
     {
-        public abstract void deliver();
-        public abstract void display();
-        public abstract void delivertime();
+        public void deliver();
+        public void display();
+        public void delivertime();
     }
 }

@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace RGR_Project
 {
-    public abstract class TransportDecorator : Deliver
+    public abstract class TransportDecorator
     {
-        protected Transport transport;
-        public TransportDecorator(Transport transport)
+        private Transport transport;
+        public virtual void TransportType()
         {
-            this.transport = transport;
+            Console.WriteLine("Simple Transport");
         }
-
     }
 }
