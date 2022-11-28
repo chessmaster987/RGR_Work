@@ -9,9 +9,13 @@ namespace RGR_Project
 {
     public class PremiumFuel : PowerfulEngine
     {
-        public override void TransportType() {
+        public new void TransportType() {
             base.TransportType();
             Console.WriteLine("I have a premium fuel in my fuelbank");
+        }
+        public PremiumFuel(Transport transport) : base(transport)
+        {
+            this.transport = transport;
         }
     }
 }

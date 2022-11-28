@@ -20,16 +20,16 @@ namespace RGR_Project
         }
         public void deliver()
         {
-            Console.WriteLine("Дистанцiя доставки = {0}. До оплати: {1}", TruckDeliveryDistance, TruckDeliveryPrice);
+            Console.WriteLine("Дистанция доставки = {0}. К оплате: {1}", TruckDeliveryDistance, TruckDeliveryPrice);
         }
         public void delivertime()
         {
             DeliveryTime = TruckDeliveryDistance / TruckDeliverySpeed;
-            Console.WriteLine("Приблизний час прибуття вантажу: {0} годин", DeliveryTime);
+            Console.WriteLine("Примерное время прибытия груза: {0} часов", DeliveryTime);
         }
-        public void display()
+        public virtual void display()
         {
-            Console.WriteLine("Вантажiвка");
+            Console.WriteLine("Грузовик");
         }
     }
 }

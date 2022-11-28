@@ -22,6 +22,8 @@ namespace TestProject1
             Transport plane = planecreate.CreateTransport("plane");
             Transport ship = shipcreate.CreateTransport("ship");
             Assert.AreEqual(plane.GetType().Name, "Plane");
+            Assert.AreEqual(truck.GetType().Name, "Truck");
+            Assert.AreEqual(ship.GetType().Name, "Ship");
         }
 
         [TestMethod]
