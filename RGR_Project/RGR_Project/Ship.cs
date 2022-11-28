@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RGR_Project;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,28 +9,19 @@ namespace RGR_Project
 {
     public class Ship : Transport
     {
-        private int ShipDeliveryPrice { get; set; }
-        private int ShipDeliveryDistance { get; set; }
-        private int ShipDeliverySpeed { get; set; }
-        private int DeliveryTime = 0;
-        public Ship()
+        public Ship(int price, int distance, int speed)
         {
-            ShipDeliveryPrice = 80;
-            ShipDeliveryDistance = 60;
-            ShipDeliverySpeed = 15;
+            this.GetPrice = 80;
+            this.GetDistance = 60;
+            this.GetSpeed = 15;
         }
-        public void deliver()
+        public override string deliver()
         {
-            Console.WriteLine("Дистанция доставки = {0}. К оплате: {1}", ShipDeliveryDistance, ShipDeliveryPrice);
+            return "Дистанция доставки = " + GetDistance.ToString() + ". " + "К оплате: " + GetPrice.ToString();
         }
-        public void delivertime()
+        public override string display()
         {
-            DeliveryTime = ShipDeliveryDistance / ShipDeliverySpeed;
-            Console.WriteLine("Примерное время прибытия груза: {0} часов", DeliveryTime);
-        }
-        public virtual void display()
-        {
-            Console.WriteLine("Корабль");
+            return "Корабль";
         }
     }
 }
