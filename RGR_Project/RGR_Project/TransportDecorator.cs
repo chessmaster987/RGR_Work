@@ -20,10 +20,6 @@ namespace RGR_Project
         {
             transport.display();
         }
-        public void delivertime()
-        {
-            transport.delivertime();
-        }
         public void TransportType() { }
     }
 }

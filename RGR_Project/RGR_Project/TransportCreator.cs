@@ -11,9 +11,9 @@ namespace RGR_Project
     {
         public override Transport CreateTransport(string type)
         {
-            if (type == "ship") return new Ship();
-            else if (type == "truck") return new Truck();
-            else return new Plane();
+            if (type == "ship") return new Ship(80,60,15);
+            else if (type == "truck") return new Truck(40,20,15);
+            else return new Plane(70,65,20);
         }
     }
 }

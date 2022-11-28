@@ -4,13 +4,15 @@ namespace TestProject1
     [TestClass]
     public class UnitTest1
     {
+        /*
         [TestMethod]
-        public void TestMethod1()//first, when was only a Truck.cs & interface Transport
+        /\public void TestMethod1()//first, when was only a Truck.cs & interface Transport
         {
             Truck t = new Truck();
             t.deliver();
             Assert.AreEqual(t.GetType().Name, "Truck");
         }
+        */
 
         [TestMethod]
         public void TestMethod2()//creating by Factory Method pattern 

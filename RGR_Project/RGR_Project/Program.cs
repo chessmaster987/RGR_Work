@@ -12,7 +12,6 @@ Transport plane = planecreate.CreateTransport("plane");
 Transport ship = shipcreate.CreateTransport("ship");
 Transport ship1 = new GPS_navigator(ship);
 ship1.display();
-ship1.delivertime();
 //truck.display();
 //truck.deliver();
 //truck.delivertime();
