@@ -1,5 +1,10 @@
 # RGR_Project
 
+![C#](https://img.shields.io/badge/language-C%23-blue)
+![OOP](https://img.shields.io/badge/paradigm-OOP-green)
+![UML](https://img.shields.io/badge/design-UML-orange)
+![Design Patterns](https://img.shields.io/badge/patterns-Factory%20Method%20%7C%20Decorator-red)
+
 Research and Software Development project for the Software Engineering discipline.
 
 Topic: implementation of a cargo delivery program based on the `Factory Method` and `Decorator` design patterns.
@@ -67,6 +72,29 @@ Transport upgradedTruck =
 
 As a result, we do not modify the `Truck` class itself, but we get a new object with extended behavior.
 
+## UML Class Diagram
+
+The system architecture is illustrated using a UML class diagram that represents the structural design of the application and demonstrates the interaction between its main components.
+
+The diagram focuses on two key design patterns used in this project:
+
+- **Factory Method** for object creation
+- **Decorator** for dynamic extension of transport functionality
+
+The UML diagram provides a visual representation of:
+- class hierarchy
+- inheritance relationships
+- composition (decorator chain)
+- overall system structure
+
+This helps to better understand how different parts of the system interact and how the design patterns are applied in practice.
+
+### System Architecture Overview (UML Class Diagram)
+
+Below is the UML class diagram for the project:
+
+![UML Diagram](docs/class_diagram.png)
+
 ## Project Structure
 
 ### Main Classes
@@ -124,10 +152,3 @@ This work demonstrates the combined use of two design patterns:
 
 - `Factory Method` reduces the dependency of client code on concrete transport classes
 - `Decorator` makes it possible to flexibly extend object functionality without modifying existing classes
-
-As a result, the system became:
-
-- more understandable
-- more flexible
-- easier to test
-- simpler to extend in the future
