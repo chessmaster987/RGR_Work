@@ -1,27 +1,19 @@
-﻿using RGR_Project;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace RGR_Project
 {
     public class Ship : Transport
     {
-        public Ship(int price, int distance, int speed)
+        public Ship(int price, int distance, int speed) : base(price, distance, speed)
         {
-            this.GetPrice = 80;
-            this.GetDistance = 60;
-            this.GetSpeed = 15;
         }
-        public override string deliver()
+
+        public override string DeliveryInfo()
         {
-            return "Дистанция доставки = " + GetDistance.ToString() + ". " + "К оплате: " + GetPrice.ToString();
+            return $"Sea delivery over a distance of {GetDistance} km. Total cost: ${GetPrice}.";
         }
+
         public override string display()
         {
-            return "Корабль";
+            return "Ship";
         }
     }
 }

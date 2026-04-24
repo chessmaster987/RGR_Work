@@ -1,26 +1,22 @@
-﻿using RGR_Project;
-Console.WriteLine("<< RGR >>");
-//Truck t = new Truck();
-//t.display();
-//t.deliver();
-//t.fillfuel();
-Creator truckcreate = new TransportCreator();
-Creator planecreate = new TransportCreator();
-Creator shipcreate = new TransportCreator();
-Transport truck = truckcreate.CreateTransport("truck");
-Transport plane = planecreate.CreateTransport("plane");
-Transport ship = shipcreate.CreateTransport("ship");
-Transport ship1 = new GPS_navigator(ship);
-ship1.display();
-//truck.display();
-//truck.deliver();
-//truck.delivertime();
-//Console.WriteLine(new string('*', 50));
-//plane.display();
-//plane.deliver();
-//plane.delivertime();
-//Console.WriteLine(new string('*', 50));
-//ship.display();
-//ship.deliver();
-//ship.delivertime();
+using RGR_Project;
 
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.WriteLine("<< RGR: Cargo Delivery >>");
+
+Creator creator = new TransportCreator();
+
+Transport truck = creator.CreateTransport("truck");
+Transport plane = creator.CreateTransport("plane");
+Transport ship = creator.CreateTransport("ship");
+Transport upgradedTruck = new PremiumFuel(new PowerfulEngine(new GPS_navigator(truck)));
+
+Transport[] transports = { truck, plane, ship, upgradedTruck };
+
+foreach (Transport transport in transports)
+{
+    Console.WriteLine(transport.display());
+    Console.WriteLine(transport.deliver());
+    Console.WriteLine($"Estimated delivery time: {transport.DeliveryTime()} h.");
+    Console.WriteLine($"Equipment: {transport.TransportType()}");
+    Console.WriteLine(new string('-', 50));
+}

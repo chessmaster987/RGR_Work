@@ -1,25 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace RGR_Project
 {
     public abstract class TransportDecorator : Transport
     {
-        protected Transport transport;
-        public TransportDecorator(Transport transport)
+        protected readonly Transport transport;
+
+        protected TransportDecorator(Transport transport)
+            : base(transport.GetPrice, transport.GetDistance, transport.GetSpeed)
         {
             this.transport = transport;
         }
-        public void deliver() {
-            transport.deliver();
-        }
-        public void display()
+
+        public override string deliver()
         {
-            transport.display();
+            return transport.deliver();
         }
-        public void TransportType() { }
+
+        public override string display()
+        {
+            return transport.display();
+        }
+
+        public override string DeliveryInfo()
+        {
+            return transport.DeliveryInfo();
+        }
+
+        public override double DeliveryTime()
+        {
+            return transport.DeliveryTime();
+        }
+
+        public override string TransportType()
+        {
+            return transport.TransportType();
+        }
     }
 }

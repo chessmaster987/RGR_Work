@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\TestProject1\\TestProject1.csproj": {}
+    "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\RGR_Project\\RGR_Project.csproj": {
+    "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\RGR_Project\\RGR_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\RGR_Project\\RGR_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\RGR_Project\\RGR_Project.csproj",
         "projectName": "RGR_Project",
-        "projectPath": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\RGR_Project\\RGR_Project.csproj",
+        "projectPath": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\RGR_Project\\RGR_Project.csproj",
         "packagesPath": "C:\\Users\\Olegi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\RGR_Project\\obj\\",
+        "outputPath": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\RGR_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Olegi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {}
           }
@@ -34,10 +35,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "imports": [
             "net461",
@@ -55,18 +63,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\TestProject1\\TestProject1.csproj": {
+    "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\TestProject1\\TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\TestProject1\\TestProject1.csproj",
+        "projectUniqueName": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\TestProject1\\TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\TestProject1\\TestProject1.csproj",
+        "projectPath": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\TestProject1\\TestProject1.csproj",
         "packagesPath": "C:\\Users\\Olegi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\TestProject1\\obj\\",
+        "outputPath": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\TestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Olegi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,10 +89,11 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\RGR_Project\\RGR_Project.csproj": {
-                "projectPath": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\RGR_Project\\RGR_Project.csproj"
+              "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\RGR_Project\\RGR_Project.csproj": {
+                "projectPath": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\RGR_Project\\RGR_Project.csproj"
               }
             }
           }
@@ -93,10 +102,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
             "MSTest.TestAdapter": {
@@ -127,12 +143,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

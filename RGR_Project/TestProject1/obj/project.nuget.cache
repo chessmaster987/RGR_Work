@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hJIYD81DTAKjEEiFJCkD80nX/6Y9r7nP2MQI/D7zcUF3m10S7Q9I7iqfkLLogYOukbuOGVJuyXl26bHNdSaj/Q==",
+  "dgSpecHash": "wn2uMNLB4fA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Olegi\\Desktop\\RGR_Project_Lavrov\\RGR_Project\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "C:\\Users\\Olegi\\Documents\\GitHub\\RGR_Work\\RGR_Project\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Olegi\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Olegi\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
@@ -91,7 +91,10 @@
     "C:\\Users\\Olegi\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Olegi\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Olegi\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Olegi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Olegi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Olegi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Olegi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Olegi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,19 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace RGR_Project
 {
     public class PowerfulEngine : TransportDecorator
     {
-        public PowerfulEngine(Transport transport) : base(transport) {
-            this.transport = transport;
-        }
-        public new void TransportType()
+        public PowerfulEngine(Transport transport) : base(transport)
         {
-            Console.WriteLine("Engine changed to VERY power");
+        }
+
+        public override string TransportType()
+        {
+            return $"{transport.TransportType()}, powerful engine";
+        }
+
+        public override string display()
+        {
+            return $"{transport.display()} + powerful engine";
+        }
+
+        public override string deliver()
+        {
+            return DeliveryInfo();
         }
     }
 }

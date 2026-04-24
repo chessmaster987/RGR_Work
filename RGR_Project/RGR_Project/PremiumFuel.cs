@@ -1,21 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace RGR_Project
 {
-    public class PremiumFuel : PowerfulEngine
+    public class PremiumFuel : TransportDecorator
     {
-        public new void TransportType() {
-            base.TransportType();
-            Console.WriteLine("I have a premium fuel in my fuelbank");
-        }
         public PremiumFuel(Transport transport) : base(transport)
         {
-            this.transport = transport;
+        }
+
+        public override string TransportType()
+        {
+            return $"{transport.TransportType()}, premium fuel";
+        }
+
+        public override string display()
+        {
+            return $"{transport.display()} + premium fuel";
+        }
+
+        public override string deliver()
+        {
+            return DeliveryInfo();
         }
     }
 }

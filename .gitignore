@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Test and coverage output
+TestResults/
+*.trx
+coverage/
+coverage.*
+
+# Logs
+*.log
+
+# OS / editor files
+.DS_Store
+Thumbs.db
